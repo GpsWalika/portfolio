@@ -1,0 +1,153 @@
+:root {
+    --main-color: #5484eb;
+    --nav-color: #232f46;
+    --search-btn-color: #00a9ff;
+    --gray-color: #788185;
+
+    --padding-2: 2px;
+    --padding-3: 3px;
+    --padding-4: 4px;
+    --padding-5: 5px;
+    --padding-6: 6px;
+    --padding-7: 7px;
+    --padding-8: 8px;
+    --padding-9: 9px;
+    --padding-10: 10px;
+    --padding-12: 12px;
+
+    --margin-2: 2px;
+    --margin-3: 3px;
+    --margin-4: 4px;
+    --margin-5: 5px;
+    --margin-6: 6px;
+    --margin-7: 7px;
+    --margin-8: 8px;
+    --margin-9: 9px;
+    --margin-10: 10px;
+    --margin-12: 12px;
+
+    /* Font Size */
+    --font-large: 18px;
+    --font-medium: 14px;
+    --font-small: 12px;
+    --font-micro: 10px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+body {
+    background-color: var(--main-color);
+    font-size: var(--font-small);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--nav-color);
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+}
+
+/* Header Bar(Nav, Logo)*/
+.l-nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo {
+    width: 90px;
+    padding: var(--padding-10);
+    background-color: var(--main-color);
+}
+
+.default-item {
+    background-color: var(--main-color);
+}
+
+.nav-items {
+    font-size: var(--font-small);
+}
+
+.nav-items a:hover {
+    background-color: rgba(222, 222, 222, 0.6);
+    border-radius: 2px;
+}
+.nav-items li {
+    padding: var(--padding-9) var(--padding-6) var(--padding-9) var(--padding-10);
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.nav-items .item a {
+    display: flex;
+    align-items: center;
+}
+
+.nav-items .item span {
+    color: rgba(255, 255, 255, 0.6);
+    padding-left: var(--padding-6);
+}
+
+.nav-items img {
+    width: 23px;
+}
+
+.r-nav {
+    display: flex;
+    align-items: center;
+}
+
+/* Sub Navigation */
+.sub-nav {
+    height: 48px;
+}
+
+.sub-nav-items {
+    max-width: 1300px;
+    display: flex;
+    margin: 0 auto;
+    height: 48px;
+}
+
+.sub-nav-items .item {
+    padding-left: var(--padding-10);
+    font-size: 16px;
+}
+
+.sub-nav-items .item span {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.sub-nav-items .item.active span,
+.sub-nav-items .item:hover span {
+    color: rgba(255, 255, 255, 1);
+    border-bottom: 2px solid;
+}
+/* Buttons */
+.btn {
+    padding: var(--padding-4) var(--padding-12);
+    background-color: var(--search-btn-color);
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+}
+
+.login-btn {
+    margin-right: var(--margin-12);
+    font-size: 0.8rem;
+    color: white;
+}
